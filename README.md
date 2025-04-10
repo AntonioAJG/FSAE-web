@@ -1,2 +1,3 @@
-# FSAE-web
-This the official website for FSAE tec racing.
+git add .
+git commit -m "my first update!"
+git push
