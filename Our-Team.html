@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Team - FSAE TEC RACING</title>
+  <style>
+
+.page-wrapper {
+  margin-top: 60px;
+}
+.page-wrapper {
+  max-width: 1200px;
+  margin: 60px auto 0 auto;
+  padding: 0 20px;
+}
+    .sub-teams-detailed {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.team-subsection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.team-subsection img {
+  flex: 1 1 300px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 26, 26, 0.2);
+}
+
+.subsection-text {
+  flex: 1 1 400px;
+}
+
+.subsection-text h2 {
+  font-size: 1.8rem;
+  color: #ff1a1a;
+  margin-bottom: 10px;
+}
+
+.subsection-text p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+body {
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 2px solid #ff1a1a;
+  border-bottom: 2px solid #ff1a1a;
+  gap: 40px;
+}
+
+nav a {
+  color: #b30000;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ff1a1a;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff1a1a;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #ff1a1a;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+  
+    /* 🔥 New Combined Team Image + Red Block */
+    .main-team-combo {
+      width: 100%;
+      max-width: 1200px;
+      margin: 60 auto 60px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 26, 26, 0.3);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+  
+    .main-team-combo:hover {
+      transform: scale(1.01);
+    }
+  
+    .team-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+  
+    .team-caption {
+      background-color: #ff1a1a;
+      color: #000;
+      padding: 30px;
+    }
+  
+    .team-caption h2 {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+  
+    .team-caption p {
+      font-size: 1.2rem;
+    }
+  
+    /* 💡 Grid for sub-teams */
+    .sub-teams-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 20px 0;
+    }
+  
+    .sub-team-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      box-shadow: 0 0 15px rgba(255, 26, 26, 0.2);
+    }
+  
+    .sub-team-card:hover {
+      transform: scale(1.02);
+    }
+  
+    .sub-team-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      opacity: 0.85;
+    }
+  
+    .sub-team-card .label {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      padding: 15px;
+      background-color: rgba(255, 26, 26, 0.9);
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+    
+  
+    /* 📱 Responsive */
+    @media screen and (max-width: 900px) {
+      .sub-teams-grid {
+        grid-template-columns: 1fr;
+      }
+  
+      .team-caption h2 {
+        font-size: 2rem;
+      }
+  
+      .team-caption p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="our-cars.html">Our Cars</a>
+    <a href="about-fsae.html">About FSAE</a>
+    <a href="our-team.html">Our Team</a>
+    <a href="#">Our Sponsors</a>
+    <a href="Contact-Us.html">Contact Us</a>
+  </nav>
+  <div class="page-wrapper">
+
+  <section class="team-page">
+    <div class="main-team-combo" onclick="location.href='team-overview.html'">
+        <div class="team-image">
+          <img src="WhatsApp-Image-2025-03-31-at-11.52.38.jpg" alt="Full Team Photo">
+        </div>
+        <div class="team-caption">
+          <h2>FSAE TEC RACING TEAM</h2>
+          <p>Click here to learn about our team structure, values, and what unites us.</p>
+        </div>
+    </div>
+      
+
+    <div class="sub-teams-grid">
+        <div class="sub-team-card" onclick="location.href='powertrain.html'">
+          <img src="WhatsApp-Image-2025-03-31-at-11.52.38.jpg" alt="Powertrain">
+          <div class="label">Powertrain</div>
+        </div>
+        <div class="sub-team-card" onclick="location.href='electrical.html'">
+          <img src="WhatsApp-Image-2025-03-31-at-11.52.38.jpg" alt="Electrical">
+          <div class="label">Electrical</div>
+        </div>
+        <div class="sub-team-card" onclick="location.href='suspension.html'">
+          <img src="WhatsApp-Image-2025-03-31-at-11.52.38.jpg" alt="Suspension">
+          <div class="label">Suspension</div>
+        </div>
+        <div class="sub-team-card" onclick="location.href='chassis.html'">
+          <img src="WhatsApp-Image-2025-03-31-at-11.52.38.jpg" alt="Chassis">
+          <div class="label">Chassis</div>
+        </div>
+        <div class="sub-team-card" onclick="location.href='aerodynamics.html'">
+          <img src="WhatsApp-Image-2025-03-31-at-11.52.38.jpg" alt="Aerodynamics">
+          <div class="label">Aerodynamics</div>
+        </div>
+        <div class="sub-team-card" onclick="location.href='vehicle-dynamics.html'">
+          <img src="WhatsApp-Image-2025-03-31-at-11.52.38.jpg" alt="Vehicle Dynamics">
+          <div class="label">Vehicle Dynamics</div>
+        </div>
+        <div class="sub-team-card" onclick="location.href='embedded.html'">
+          <img src="WhatsApp-Image-2025-03-31-at-11.52.38.jpg" alt="Embedded Systems">
+          <div class="label">Embedded</div>
+        </div>
+        <div class="sub-team-card" onclick="location.href='admin.html'">
+          <img src="WhatsApp-Image-2025-03-31-at-11.52.38.jpg" alt="Admin and Finance">
+          <div class="label">Admin / Finance</div>
+        </div>
+        <div class="sub-team-card" onclick="location.href='marketing.html'">
+          <img src="WhatsApp-Image-2025-03-31-at-11.52.38.jpg" alt="Marketing">
+          <div class="label">Marketing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+

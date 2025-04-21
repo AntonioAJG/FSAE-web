@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FSAE TEC RACING</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: #ff1a1a;
+    }
+
+    body {
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 2px solid #ff1a1a;
+  border-bottom: 2px solid #ff1a1a;
+  gap: 40px;
+}
+
+nav a {
+  color: #b30000;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ff1a1a;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff1a1a;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #ff1a1a;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .container p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .parallax-window {
+      background-image: url('./WhatsApp Image 2025-04-21 at 10.36.46.jpeg');
+      height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      border-top: 3px solid #ff1a1a;
+      border-bottom: 3px solid #ff1a1a;
+    }
+
+    .about-us {
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .about-box {
+      background-color: #ff1a1a;
+      color: #000;
+      max-width: 900px;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 26, 26, 0.4);
+      font-size: 1.1rem;
+    }
+
+    .about-box h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .about-box p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .about-box ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    .about-box li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FSAE TEC RACING</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="our-cars.html">Our Cars</a>
+    <a href="about-fsae.html">About FSAE</a>
+    <a href="Our-Team.html">Our Team</a>
+    <a href="#">Our Sponsors</a>
+    <a href="Contact-Us.html">Contact Us</a>
+  </nav>  
+
+  <div class="container">
+    <p>Welcome to the official site of FSAE TEC Racing. We build, race, and innovate.</p>
+  </div>
+
+  <div class="parallax-window"></div>
+
+  <section class="about-us">
+    <div class="about-box">
+      <h2>About Us</h2>
+      <p>
+        We are <strong>FSAE TEC RACING</strong>, a passionate team of engineers and innovators building the future of motorsport.  
+        Our work spans across multiple subsystems including:
+      </p>
+      <ul>
+        <li><strong>Aerodynamics</strong> – designing wings and bodywork to cut through the air with precision</li>
+        <li><strong>Chassis</strong> – crafting a lightweight and rigid structure</li>
+        <li><strong>Powertrain</strong> – developing high-performance propulsion systems</li>
+        <li><strong>Electric</strong> – managing the energy that drives our machine</li>
+        <li><strong>Suspension</strong> – optimizing grip, balance, and handling</li>
+      </ul>
+      <p>
+        But behind every great car, there’s a team of strategists making it possible.  
+        Our <strong>Administration Team</strong> leads the charge in:
+      </p>
+      <ul>
+        <li><strong>Planning</strong> – structuring every stage of development</li>
+        <li><strong>Marketing</strong> – showing the world who we are</li>
+        <li><strong>Cost Analysis</strong> – keeping our performance on budget</li>
+        <li><strong>Safety</strong> – ensuring every step is secure and compliant</li>
+        <li><strong>Project Management</strong> – turning ideas into real, working cars</li>
+      </ul>
+      <p>
+        Together, we are more than just a student team — we are a racing family building engineering legends.
+      </p>
+    </div>
+  </section>
+</body>
+</html>
+

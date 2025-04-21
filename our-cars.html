@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Cars - FSAE TEC RACING</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 2px solid #ff1a1a;
+  border-bottom: 2px solid #ff1a1a;
+  gap: 40px;
+}
+
+nav a {
+  color: #b30000;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ff1a1a;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff1a1a;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #ff1a1a;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="our-cars.html">Our Cars</a>
+    <a href="about-fsae.html">About FSAE</a>
+    <a href="Our-Team.html">Our Team</a>
+    <a href="#">Our Sponsors</a>
+    <a href="Contact-Us.html">Contact Us</a>
+  </nav>
+
+  <div class="container">
+    <h1>Our Cars</h1>
+    <p>
+      At FSAE TEC Racing, our car is the product of countless hours of engineering, testing, and teamwork.  
+      Each subsystem is developed by specialists who push innovation to the limit.
+    </p>
+    <p>
+      <strong>Chassis:</strong> Our chassis is built from lightweight materials like aluminum and carbon fiber to ensure strength and performance.<br>
+      <strong>Aerodynamics:</strong> We design custom wings, diffusers, and body panels to generate downforce and reduce drag.<br>
+      <strong>Suspension:</strong> Tuned for performance and adjustability to suit different tracks.<br>
+      <strong>Powertrain:</strong> Whether combustion or electric, our drivetrain is optimized for acceleration, efficiency, and control.<br>
+      <strong>Electronics:</strong> We integrate sensors and custom ECUs for precision data logging and control systems.
+    </p>
+    <p>
+      We take pride in designing, simulating, manufacturing, assembling, and testing every component ourselves.
+    </p>
+  </div>
+</body>
+</html>
