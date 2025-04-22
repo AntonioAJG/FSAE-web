@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electronics Team - FSAE TEC RACING</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      background-color: #2a2a2a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      border-top: 2px solid #ff1a1a;
+      border-bottom: 2px solid #ff1a1a;
+      gap: 40px;
+      font-family: Arial, sans-serif;
+    }
+
+    nav a {
+      color: #b30000;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      position: relative;
+      white-space: nowrap;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0%;
+      background-color: #ff1a1a;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff1a1a;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .text-section {
+      flex: 1 1 55%;
+    }
+
+    .image-section {
+        flex: 1 1 40%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+        align-items: start;
+    }
+
+    .image-section img:nth-child(1),
+    .image-section img:nth-child(2) {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .image-section img:nth-child(3) {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        width: 90%;
+        max-width: 250px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff1a1a;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #ff1a1a;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="our-cars.html">Our Cars</a>
+    <a href="about-fsae.html">About FSAE</a>
+    <a href="our-team.html">Our Team</a>
+    <a href="#">Our Sponsors</a>
+    <a href="Contact-Us.html">Contact Us</a>
+  </nav>
+
+  <div class="container">
+    <div class="text-section">
+      <h1>Electronics Team</h1>
+      <p>
+        The Electronics Team is a cornerstone of our racing project — they’re the ones who ensure intelligence, efficiency, and precision run through every wire of our vehicle.
+      </p>
+      <p>
+        Their mission goes beyond wiring; they’re responsible for designing, developing, and validating the entire electrical and electronic system. This includes everything from low-voltage control to high-voltage energy management. From the battery pack to the inverter, data modules, and safety devices like the BMS and IMD, the team ensures every component is reliable and competition-compliant.
+      </p>
+      <p>
+        Their process includes planning, simulation, component selection, PCB layout, harness design, and system integration. Using tools like LTSpice, Altium, MATLAB, and Simulink, they simulate and test before implementation, ensuring the system works both digitally and in real life.
+      </p>
+      <p>
+        Ultimately, the Electronics Team is what makes the car smart, safe, and future-ready. Their work blends technical knowledge with innovation and collaboration — turning raw energy into a well-orchestrated symphony of performance.
+      </p>
+    </div>
+    <div class="image-section">
+      <img src="electric1.jpeg" alt="Electronics 1" />
+      <img src="electric2.jpeg" alt="Electronics 2" />
+      <img src="electric3.jpeg" alt="Electronics 3" />
+    </div>
+  </div>
+</body>
+</html>
